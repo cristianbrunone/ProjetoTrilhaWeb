@@ -1,0 +1,3 @@
+2024-06-06 18:39:18,725 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-06-06 18:52:23,368 [Worker-23: http://download.eclipse.org/usssdk/drops/milestone/S908-1.2-RC1/content.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://download.eclipse.org:80
+2024-06-06 18:52:57,784 [Worker-23: http://download.eclipse.org/technology/m2e/releases/compositeContent.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://download.eclipse.org:80

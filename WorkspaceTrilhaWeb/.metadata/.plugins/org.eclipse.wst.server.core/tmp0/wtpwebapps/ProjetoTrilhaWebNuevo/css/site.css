@@ -1,0 +1,438 @@
+@charset "UTF-8";
+
+/* Configuração geral do corpo da página */
+
+body{
+	margin: 0;
+	font-family: "Century Gothic", sans-serif;
+	background-color: #dcdcdc;
+	
+}
+
+
+
+/**********************************************************
+				Configurações gerais
+**********************************************************/
+
+/* Cabeçalho */ 
+
+header{
+	margin-bottom: 0%;
+	display: flex;
+	height: 90px;
+	background-color: #008eb6;
+	}
+
+header img{
+	float: left;
+	height: 80px;
+	width: 80px;
+	margin: 0.5%; 
+}
+
+header h1{
+	display: flex;
+	margin: 0.6em 0.1em;
+	font-size: 45px;
+	color:#f5f5f5;
+}
+
+/* Menu */ 
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  padding: 1.8em 1em 5em 1em; /* Reduzco el padding-right a 0 */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 0em;
+  border-radius: 20px;
+  position: relative; /* Añado posición relativa */
+  transition: color 0.3s ease; /* Agrego transición para el color */
+}
+
+nav .opcao {
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    position: relative; /* Añado posición relativa */
+}
+
+nav .opcao:hover {
+     color: #e0e0e0; /* Color gris más claro */
+}
+
+nav .opcao:before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, rgba(255,255,255, 0.2), white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform .5s ease;
+}
+
+nav .opcao:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Area geral para conteúdos especificos de cada página */
+
+section{
+	clear: both;
+	min-height: 360px;
+	width: 100%;
+	margin-top: 5%;
+	
+}
+
+/* Rodapé */ 
+
+footer{
+	background: #667db6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	margin-top: 50px; /* Ajuste el valor según sea necesario */
+}
+
+/*********************************************************
+			Configuraçãoda página inicial
+**********************************************************/
+
+section #topo{
+	width: 900px;
+	margin: 0px auto;
+	height: 250px;
+	
+}
+
+.geladeira-container {
+    position: relative;
+    width: 125px;
+    height: 250px; 
+    float: left;
+    cursor: pointer;
+}
+
+.geladeira-fechada1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.geladeira-aberta1{
+	position: absolute;
+    width: 175px;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.geladeira-aberta2{
+	position: absolute;
+    width: 140px;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.geladeira-aberta1 {
+    opacity: 0;
+    
+}
+
+.geladeira-aberta2 {
+    opacity: 0;
+    
+}
+
+.geladeira-container:hover .geladeira-aberta2 {
+    opacity: 1;
+}
+
+
+
+.geladeira-container:hover .geladeira-fechada1 {
+    opacity: 0;
+}
+
+.geladeira-container:hover .geladeira-aberta1 {
+    opacity: 1;
+}
+
+
+section #titulos{
+	float: left;
+	height: 250px;
+	width: 650px;
+	margin: 10px auto;
+}
+
+h2{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 50px;
+	color: #444444;
+}
+
+h3{
+	text-align: center;
+	margin-top: 50px;;
+	font-size: 20px;
+	color: #444444;
+}
+
+section p{
+	clear: both;
+	text-align: center;
+	margin: 10px 80px;
+}
+
+/*********************************************************
+			Configuraçãoda página de Produtos
+**********************************************************/
+	
+.tabelaProdutos{
+	margin: 10px auto;
+	text-align: center;
+}	
+
+.tituloTabela{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	border: transparent;	
+}
+
+tr,td,th{
+	border: 1px solid #B0C4DE;
+	padding: 5px;
+}	
+
+tr,td{
+	font-size: 14px;
+}
+
+tr:nth-child(even) {
+	background-color: #b1ccf5;	
+}
+
+tr:nth-child(odd) {
+	background-color: #83afd3;
+}
+
+.tabelaFreezers{
+	margin: 10px auto;
+	text-align: center;
+}
+
+
+/*********************************************
+        Configuração da página Fale conosco    
+**********************************************/
+
+.faleConosco {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faleConosco input[type="text"],
+.faleConosco input[type="email"],
+.faleConosco textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.faleConosco textarea {
+    height: 100px;
+    resize: none;
+}
+
+.faleConosco input[type="text"]:focus,
+.faleConosco input[type="email"]:focus,
+.faleConosco textarea:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faleConosco button {
+    width: calc(50% - 5px); /* Para dejar espacio entre los botones */
+    padding: 10px;
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.faleConosco button:first-child {
+    margin-right: 5px; /* Margen a la derecha para el primer botón */
+}
+
+.faleConosco button:last-child {
+    margin-left: 5px; /* Margen a la izquierda para el último botón */
+    background-color: #4CAF50; /* Verde */
+}
+
+
+.faleConosco button:hover {
+     background-color: #0056b3;
+}
+
+
+
+/*********************************************************
+			Configuração dos Sliders
+**********************************************************/
+
+containerSlider {
+	padding:2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	
+}
+
+.slider{
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: hidden;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	height: 535px;
+	width: 99%;
+	margin-left: 14px; /* Ajusta el valor según sea necesario */
+}
+
+.slider img{
+	flex: 1 0 100%;
+	scroll-snap-align: star;
+	object-fit: cover;
+}
+
+.slider-nav{
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    /* Añadido para definir el tamaño de los círculos */
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+.slider-nav a.active {
+    background-color: #CC0033; /* Cambia este color al color deseado */
+}
+
+/*********************************************************
+			Configuração dos Logos
+**********************************************************/
+.logos-slide{
+	display: inline-block;
+	animation: 40s slide infinite linear;
+	white-space: nowrap;
+	opacity: 0.9;
+}
+
+.logos {
+	overflow: hidden;
+	padding: 25px 0 0 0;
+	background: white;
+	white-space: nowrap;
+	position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+	left: 0;
+	background: linear-gradient(to left, rgba(255,255,255, 0), white);
+}
+
+.logos:after {
+	right: 0;
+	background: linear-gradient(to right, rgba(255,255,255, 0), white);
+}
+
+.logos:hover .logos-slide {
+	animation-play-state: paused;
+}
+
+.logos-slide img {
+	height: 25px;
+	margin: 0 40px;
+}
+
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+	 	
+	 	transform: translateX(-100%);
+	}
+}
+
+
+
+			

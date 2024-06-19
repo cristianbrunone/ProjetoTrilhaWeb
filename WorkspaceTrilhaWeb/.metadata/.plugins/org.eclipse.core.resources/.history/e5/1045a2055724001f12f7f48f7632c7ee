@@ -1,0 +1,8 @@
+<img src="/ProjetoTrilhaWebNuevo/imgs/logo.png" alt="Logo de Coldigo Geladeiras">
+<h1>Coldigo Geladeiras</h1>
+<nav>	
+<a href="/ProjetoTrilhaWeb/index.html"><div class="opcao">Início</div></a>
+<a href="/ProjetoTrilhaWebNuevo/pages/site/produtos.html"><div class="opcao">Produtos</div></a>
+<a href="/ProjetoTrilhaWebNuevo/pages/site/faleconosco.html"><div class="opcao">Fale Conosco</div></a>
+</nav>
+   

@@ -1,0 +1,3 @@
+INDEX VERSION 1.4+C:\Users\cristian_b_cordeiro\Desktop\WorkspaceTrilhaWebNuevo\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3281647860.index
+1315152338.index
